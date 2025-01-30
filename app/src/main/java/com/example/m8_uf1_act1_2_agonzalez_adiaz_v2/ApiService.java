@@ -18,4 +18,6 @@ public interface ApiService {
 
     @DELETE("deleteCita.php/{id}")
     Call<Void> deleteCita(@Path("id") int id);
+
+    Call<List<Cita>> getCitas();
 }

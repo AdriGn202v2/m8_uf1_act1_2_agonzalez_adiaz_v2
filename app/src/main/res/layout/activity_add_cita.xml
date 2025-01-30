@@ -8,31 +8,41 @@
     <EditText
         android:id="@+id/editNotari"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:hint="Nom del Notari" />
 
     <EditText
         android:id="@+id/editSala"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:hint="Sala" />
 
-    <EditText
-        android:id="@+id/editDia"
+    <TextView
+        android:id="@+id/textDia"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Dia (DD-MM-YYYY)" />
+        android:layout_height="48dp"
+        android:hint="Selecciona la Fecha"
+        android:onClick="selectDate"
+        android:focusable="false"
+        android:clickable="true"
+        android:padding="10dp"
+        android:background="@android:drawable/editbox_background"/>
 
-    <EditText
-        android:id="@+id/editHora"
+    <TextView
+        android:id="@+id/textHora"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Hora (HH:MM)" />
+        android:layout_height="48dp"
+        android:hint="Selecciona la Hora"
+        android:onClick="selectTime"
+        android:focusable="false"
+        android:clickable="true"
+        android:padding="10dp"
+        android:background="@android:drawable/editbox_background"/>
 
     <EditText
         android:id="@+id/editDescripcio"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:hint="Descripció" />
 
     <Button
