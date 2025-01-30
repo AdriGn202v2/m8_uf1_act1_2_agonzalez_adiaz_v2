@@ -8,16 +8,13 @@ import retrofit2.http.POST;
 import retrofit2.http.DELETE;
 import retrofit2.http.Path;
 
-//hola
 public interface ApiService {
     @POST("addCita.php")
     Call<Void> addCita(@Body Cita cita);
 
-    @GET("getCites.php")
-    Call<List<Cita>> getCites();
+    @GET("getCitas.php")
+    Call<List<Cita>> getCitas();
 
     @DELETE("deleteCita.php/{id}")
     Call<Void> deleteCita(@Path("id") int id);
-
-    Call<List<Cita>> getCitas();
 }
