@@ -6,6 +6,8 @@ import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,6 +21,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void openListCitesActivity(View view) {
         Intent intent = new Intent(this, ListCitesActivity.class);
+        startActivity(intent);
+    }
+
+    public void openDeleteCitaActivity(View view) {
+        Intent intent = new Intent(this, DeleteCitaActivity.class);
         startActivity(intent);
     }
 }

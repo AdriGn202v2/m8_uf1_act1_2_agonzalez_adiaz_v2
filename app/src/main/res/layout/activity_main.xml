@@ -35,5 +35,5 @@
         android:layout_height="wrap_content"
         android:text="Eliminar Citas"
         android:layout_marginTop="10dp"
-        android:onClick="eliminarCitas"/>
+        android:onClick="openDeleteCitaActivity"/>
 </LinearLayout>

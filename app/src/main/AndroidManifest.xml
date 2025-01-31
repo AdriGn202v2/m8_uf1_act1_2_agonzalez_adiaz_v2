@@ -34,6 +34,10 @@
             android:name=".ListCitesActivity"
             android:exported="true" />
 
+        <activity
+            android:name=".DeleteCitaActivity"
+            android:exported="true" />
+
     </application>
 
 </manifest>
