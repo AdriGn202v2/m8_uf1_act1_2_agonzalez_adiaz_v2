@@ -16,10 +16,55 @@ public class Cita {
         this.descripcio = descripcio;
     }
 
-    public int getId() { return id; }
-    public String getNotari() { return notari; }
-    public String getSala() { return sala; }
-    public String getDia() { return dia; }
-    public String getHora() { return hora; }
-    public String getDescripcio() { return descripcio; }
+    public int getId() {
+        return id;
+    }
+
+    /* public int getId() { return id; }
+     public String getNotari() { return notari; }
+     public String getSala() { return sala; }
+     public String getDia() { return dia; }
+     public String getHora() { return hora; }
+     public String getDescripcio() { return descripcio; }
+ }*/
+// Getters y setters necesarios para Retrofit
+    public String getNotari() {
+        return notari;
+    }
+
+    public void setNotari(String notari) {
+        this.notari = notari;
+    }
+
+    public String getSala() {
+        return sala;
+    }
+
+    public void setSala(String sala) {
+        this.sala = sala;
+    }
+
+    public String getDia() {
+        return dia;
+    }
+
+    public void setDia(String dia) {
+        this.dia = dia;
+    }
+
+    public String getHora() {
+        return hora;
+    }
+
+    public void setHora(String hora) {
+        this.hora = hora;
+    }
+
+    public String getDescripcio() {
+        return descripcio;
+    }
+
+    public void setDescripcio(String descripcio) {
+        this.descripcio = descripcio;
+    }
 }

@@ -9,6 +9,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import java.util.Calendar;
+
+import okhttp3.ResponseBody;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -73,15 +75,15 @@ public class AddCitaActivity extends AppCompatActivity {
                 descripcio.getText().toString()
         );
 
-        apiService.addCita(cita).enqueue(new Callback<Void>() {
+        apiService.addCita(cita).enqueue(new Callback<ResponseBody>() {
             @Override
-            public void onResponse(Call<Void> call, Response<Void> response) {
+            public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
                 Toast.makeText(AddCitaActivity.this, "Cita afegida!", Toast.LENGTH_SHORT).show();
                 finish();
             }
 
             @Override
-            public void onFailure(Call<Void> call, Throwable t) {
+            public void onFailure(Call<ResponseBody> call, Throwable t) {
                 Toast.makeText(AddCitaActivity.this, "Error en afegir la cita", Toast.LENGTH_SHORT).show();
             }
         });
